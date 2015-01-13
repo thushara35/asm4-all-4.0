@@ -4,10 +4,37 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.wso2.asm4</groupId>
+    <groupId>org.asm4.wso2</groupId>
     <artifactId>asm4-all</artifactId>
-    <version>4.0</version>
+    <version>4.0.0wso2v1</version>
     <packaging>bundle</packaging>
+    <name>asm4.wso2</name>
+    
+    <description>
+        org.asm4.wso2. This bundle will export packages from asm-all.jar
+    </description>
+    <url>http://wso2.org</url>
+
+    <repositories>
+    	<repository>
+      	  <id>java.net</id>
+      	  <url>http://repo1.maven.org/maven2/</url>
+    	</repository>
+   </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>wso2.releases</id>
+            <name>WSO2 internal Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>wso2.snapshots</id>
+            <name>Apache Snapshot Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <build>
         <plugins>
